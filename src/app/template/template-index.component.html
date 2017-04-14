@@ -1,0 +1,31 @@
+<fieldset>
+  <legend>
+    <button class="btn btn-danger" (click)="OnClick()">Template Syntax</button>
+  </legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['interpolation']">Interpolation</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['reference']">Reference Variables</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['property']">Property Bindings[@Input]</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['event-default']">Event Binding (Built-in events)</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['event-custom']">Event Binding[@Output] (Custom events)</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['two-way']">Two-way Bindings[()]</a></li>
+    </div>
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>

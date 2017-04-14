@@ -7,6 +7,7 @@ import {RouterModule} from '@angular/router'
 import {AppComponent} from './app.component';
 import {PipesModule} from "./pipes/pipes.module";
 import {ExamplesIndexComponent} from './examples-index.component';
+import {TemplateModule} from "./template/template.module";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {ExamplesIndexComponent} from './examples-index.component';
     FormsModule,
     HttpModule,
     PipesModule,
+    TemplateModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],
