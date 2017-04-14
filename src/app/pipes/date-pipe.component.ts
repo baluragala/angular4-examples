@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `<div>
 <fieldset>
   <legend>Date Pipe :</legend>
-  <code>## date_expression | date[:format] ##</code>
+  <code> date_expression | date[:format] </code>
   <br/><br/>
     <p>Today is {{today | date}}</p>
     <p>Or if you prefer, {{today | date:'fullDate'}}</p>

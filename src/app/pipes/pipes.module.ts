@@ -19,7 +19,7 @@ import { LowerUpperTitlePipeComponent } from './lower-upper-title-pipe.component
     CommonModule,
     RouterModule.forChild([
       {
-        path: 'pipes', children: [
+        path: 'pipes', component:PipesIndexComponent ,children: [
         {path: 'async-promise', component: AsyncPromisePipeComponent},
         {path: 'async-observable', component: AsyncObservablePipeComponent},
         {path: 'currency', component: CurrencyPipeComponent},

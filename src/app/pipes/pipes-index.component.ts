@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-pipes-index',
-  template: `
-    <fieldset>
-      <legend>Pipes</legend>
-    </fieldset>
-  `,
+  templateUrl:'./pipes-index.component.html',
   styles: []
 })
 export class PipesIndexComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+
+  OnClick(){
+    this.router.navigateByUrl('/pipes');
   }
 
 }

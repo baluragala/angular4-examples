@@ -2,12 +2,15 @@ import {Component} from "@angular/core";
 
 @Component({
   selector: 'app-async-promise-pipe',
-  template: `<div>
-    <code>promise|async</code>: 
-    <button (click)="clicked()" class="btn btn-success">Click here to Resolve Promise</button>
+  template: `
+  <div>
     <fieldset>
-    <legend>Result: {{statusMessage}}</legend>
-    {{ promise | async }}
+      <legend>Async Promise :</legend>
+      <code>promise or observable expression | async</code>
+      <br/><br/>
+      <button (click)="clicked()" class="btn btn-success">Click here to Resolve Promise</button>
+      <p>Result: {{statusMessage}}</p>
+      <pre>{{ promise | async }}</pre>
     </fieldset>
   </div>`
 })

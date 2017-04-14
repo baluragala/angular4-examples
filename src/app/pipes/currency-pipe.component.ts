@@ -4,9 +4,9 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-currency-pipe',
   template: `<fieldset>
   <legend>Currency Pipe :</legend>
-  <code>## number_expression |
+  <code>number_expression |
     currency[:currencyCode[:symbolDisplay[:digitInfo(minIntegerDigits.minFractionDigits-maxFractionDigits)]]]
-    ##</code>
+   </code>
   <div>
     <p>Apple: {{applePrice | currency:'GBP':false}}</p>
     <p>Ball: {{ballPrice | currency:'GBP':true:'4.2-2'}}</p>

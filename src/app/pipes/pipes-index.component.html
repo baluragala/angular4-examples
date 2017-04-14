@@ -1,0 +1,38 @@
+<fieldset>
+  <legend><button class="btn btn-warning" (click)="OnClick()">Pipes</button></legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['async-promise']">Async Promise</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['async-observable']">Async Observable</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['currency']">Currency</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['date']">Date</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['decimal']">Decimal (number)</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['i18nplural']">I18NPlural</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['i18nselect']">I18NSelect</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['json']">Json</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['case']">Lower/Upper/Title case</a></li>
+    </div>
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>
