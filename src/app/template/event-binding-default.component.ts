@@ -11,6 +11,7 @@ import {Component, OnInit} from '@angular/core';
         Click on this paragraph
       </p>
       <p>(X , Y)</p><pre>{{"(" + x + "," + y +")"}}</pre>
+      <!-- Example for template syntax assignment-->
       <pre (click)="messageFrom='You clicked on element of type: ' + $event.target.localName">Assignment: {{messageFrom}}</pre>
     </div>
   `,
