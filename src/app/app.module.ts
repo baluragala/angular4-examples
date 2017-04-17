@@ -8,6 +8,7 @@ import {AppComponent} from './app.component';
 import {PipesModule} from "./pipes/pipes.module";
 import {ExamplesIndexComponent} from './examples-index.component';
 import {TemplateModule} from "./template/template.module";
+import {StylingModule} from "./styling/styling.module";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {TemplateModule} from "./template/template.module";
     HttpModule,
     PipesModule,
     TemplateModule,
+    StylingModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],
