@@ -1,0 +1,15 @@
+<fieldset>
+  <legend>
+    <button class="btn btn-danger" (click)="OnClick()">Change Detection</button>
+  </legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['default']">Default</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['on-push']">OnPush</a></li>
+    </div>
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>
