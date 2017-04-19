@@ -1,0 +1,11 @@
+p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  color: coral;
+}
+
+.note {
+  text-decoration: underline;
+  color: mediumvioletred;
+}
