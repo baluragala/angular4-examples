@@ -10,6 +10,8 @@ import {ExamplesIndexComponent} from './examples-index.component';
 import {TemplateModule} from "./template/template.module";
 import {ChangeDetectionModule} from "./change-detection/change-detection.module";
 import {StylingModule} from "./styling/styling.module";
+import {ComponentModule} from "./component/component.module";
+import {DirectiveModule} from "./directive/directive.module";
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import {StylingModule} from "./styling/styling.module";
     TemplateModule,
     ChangeDetectionModule,
     StylingModule,
+    ComponentModule,
+    DirectiveModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],

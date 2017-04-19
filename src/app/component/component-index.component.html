@@ -1,0 +1,14 @@
+<fieldset>
+  <legend><button class="btn btn-warning" (click)="OnClick()">Components</button></legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['simple']">Simple Component</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['composing']">Composing Component</a></li>
+    </div>
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>
+
