@@ -7,12 +7,15 @@ import {directiveRoutes} from "./directive.routes";
 import { NgIfComponent } from './ng-if.component';
 import { NgStyleComponent } from './ng-style.component';
 import { NgClassComponent } from './ng-class.component';
+import { NgIfElseComponent } from './ng-if-else.component';
+import { NgIfThenElseComponent } from './ng-if-then-else.component';
+import { NgSwitchComponent } from './ng-switch.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(directiveRoutes)
   ],
-  declarations: [DirectiveIndexComponent, NgForComponent, NgIfComponent, NgStyleComponent, NgClassComponent]
+  declarations: [DirectiveIndexComponent, NgForComponent, NgIfComponent, NgStyleComponent, NgClassComponent, NgIfElseComponent, NgIfThenElseComponent, NgSwitchComponent]
 })
 export class DirectiveModule { }
