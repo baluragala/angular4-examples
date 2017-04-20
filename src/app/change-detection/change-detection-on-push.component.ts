@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, KeyValueDiffers} from '@angular/core';
 
 @Component({
   selector: 'app-change-detection-on-push',
@@ -20,9 +20,6 @@ export class ChangeDetectionOnPushComponent implements OnInit {
 
   course1: any;
   course2: any;
-
-  constructor() {
-  }
 
   ngOnInit() {
     this.course1 = {title: 'Learning Angular', author: 'baluragala'};
