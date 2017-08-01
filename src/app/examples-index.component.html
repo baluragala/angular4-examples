@@ -1,0 +1,24 @@
+<fieldset>
+  <legend><button class="btn btn-warning" (click)="OnClick()">Master Index</button></legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['component']">Component</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['template']">Template</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['styling']">Styling</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['directive']">Directive</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['pipes']">Pipes</a></li>
+    </div>
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>

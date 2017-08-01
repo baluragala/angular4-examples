@@ -7,6 +7,8 @@ import {NgClassComponent} from "./ng-class.component";
 import {NgIfElseComponent} from "./ng-if-else.component";
 import {NgIfThenElseComponent} from "./ng-if-then-else.component";
 import {NgSwitchComponent} from "./ng-switch.component";
+import {CustomStructuralComponent} from "./custom-structural.component";
+import {CustomAttributeComponent} from "./custom-attribute.component";
 
 export const directiveRoutes: [Route] = [
   {
@@ -17,7 +19,9 @@ export const directiveRoutes: [Route] = [
     {path: 'ng-class', component: NgClassComponent},
     {path: 'ng-if-else', component: NgIfElseComponent},
     {path: 'ng-if-then-else', component: NgIfThenElseComponent},
-    {path: 'ng-switch', component: NgSwitchComponent}
+    {path: 'ng-switch', component: NgSwitchComponent},
+    {path: 'custom-structural', component: CustomStructuralComponent},
+    {path: 'custom-attribute', component: CustomAttributeComponent}
   ]
   }
 ];

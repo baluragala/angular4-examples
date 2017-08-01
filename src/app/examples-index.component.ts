@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-examples-index',
-  template: `
-    <p>
-      Welcome !!!
-    </p>
-  `,
+  templateUrl:'./examples-index.component.html',
   styles: []
 })
 export class ExamplesIndexComponent implements OnInit {
