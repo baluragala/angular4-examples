@@ -14,13 +14,14 @@ import {DelayDirective} from './delay.directive';
 import { CustomStructuralComponent } from './custom-structural.component';
 import { ConfirmDirective } from './confirm.directive';
 import { CustomAttributeComponent } from './custom-attribute.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(directiveRoutes)
   ],
-  declarations: [DirectiveIndexComponent, NgForComponent, NgIfComponent, NgStyleComponent, NgClassComponent, NgIfElseComponent, NgIfThenElseComponent, NgSwitchComponent, DelayDirective, CustomStructuralComponent, ConfirmDirective, CustomAttributeComponent]
+  declarations: [DirectiveIndexComponent, NgForComponent, NgIfComponent, NgStyleComponent, NgClassComponent, NgIfElseComponent, NgIfThenElseComponent, NgSwitchComponent, DelayDirective, CustomStructuralComponent, ConfirmDirective, CustomAttributeComponent, HighlightDirective]
 })
 export class DirectiveModule {
 }
