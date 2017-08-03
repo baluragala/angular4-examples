@@ -3,6 +3,7 @@ import {AuthorsComponent} from './authors.component';
 import {AuthorsListComponent} from './authors-list.component';
 import {AuthorDetailComponent} from './author-detail.component';
 import {RouteParamsComponent} from "./route-params.component";
+import {ImperativeNavigationComponent} from "./imperative-navigation.component";
 
 export const routingRoutes = [
   {
@@ -13,7 +14,8 @@ export const routingRoutes = [
       {path: ':id', component: AuthorDetailComponent, outlet: 'detail'}
     ]
     },
-    {path: 'params-query-params/:username', component: RouteParamsComponent}
+    {path: 'params-query-params/:username', component: RouteParamsComponent},
+    {path: 'imperative', component: ImperativeNavigationComponent}
   ]
   },
 ];
