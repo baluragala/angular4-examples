@@ -20,6 +20,7 @@ import {AuthorsComponent} from './routing/authors.component';
 import {RoutingModule} from './routing/routing.module';
 import { RouteParamsComponent } from './routing/route-params.component';
 import { ImperativeNavigationComponent } from './routing/imperative-navigation.component';
+import { ResolveCourseComponent } from './routing/resolve-course.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ImperativeNavigationComponent } from './routing/imperative-navigation.c
     AuthorDetailComponent,
     AuthorsComponent,
     RouteParamsComponent,
-    ImperativeNavigationComponent
+    ImperativeNavigationComponent,
+    ResolveCourseComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 <fieldset>
-  <legend><button class="btn btn-warning" (click)="OnClick()">Master Index</button></legend>
+  <legend>
+    <button class="btn btn-warning" (click)="OnClick()">Master Index</button>
+  </legend>
   <div class="row">
     <div class="col-md-4">
       <li><a [routerLink]="['component']">Component</a></li>
@@ -20,6 +22,11 @@
     </div>
     <div class="col-md-4">
       <li><a [routerLink]="['forms']">Forms</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['routing']">Routing</a></li>
     </div>
   </div>
   <br/><br/>
