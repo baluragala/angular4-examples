@@ -4,13 +4,18 @@
   </legend>
   <div class="row">
     <div class="col-md-4">
-      <li><a [routerLink]="['params-query-params','baluragla']" [queryParams]="{'busy':true,'calendar':'permitted'}">Params
+      <li><a [routerLink]="['params-query-params','baluragla']"
+             [queryParams]="{'busy':true,'calendar':'permitted'}"
+             routerLinkActive="active"
+      >Params
         and Query
         Params</a>
       </li>
     </div>
     <div class="col-md-4">
-      <li><a [routerLink]="['authors', {outlets: {'list': ['authorsList'], 'detail': ['none']}}]">Named Outlets</a></li>
+      <li><a [routerLink]="['authors', {outlets: {'list': ['authorsList'], 'detail': ['none']}}]"
+             routerLinkActive="active"
+      >Named Outlets</a></li>
     </div>
   </div>
   <br/><br/>
