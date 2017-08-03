@@ -18,6 +18,7 @@ import {AuthorsListComponent} from './routing/authors-list.component';
 import {AuthorDetailComponent} from './routing/author-detail.component';
 import {AuthorsComponent} from './routing/authors.component';
 import {RoutingModule} from './routing/routing.module';
+import { RouteParamsComponent } from './routing/route-params.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {RoutingModule} from './routing/routing.module';
     RoutingIndexComponent,
     AuthorsListComponent,
     AuthorDetailComponent,
-    AuthorsComponent
+    AuthorsComponent,
+    RouteParamsComponent
   ],
   imports: [
     BrowserModule,
