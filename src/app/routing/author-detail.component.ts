@@ -5,7 +5,7 @@ import {AUTHORS} from './data';
 @Component({
   selector: 'app-author-detail',
   template: `
-    <p *ngIf="!author">Please Select Author</p>
+    <h1 *ngIf="!author">Please Select Author</h1>
     <div *ngIf="author">
       <h1>{{author.name}}</h1>
       <h3>{{author.email}}</h3>

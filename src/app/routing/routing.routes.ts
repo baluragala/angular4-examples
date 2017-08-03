@@ -8,7 +8,7 @@ export const routingRoutes = [
     path: 'routing', component: RoutingIndexComponent, children: [
     {
       path: 'authors', component: AuthorsComponent, children: [
-      {path: 'authorList', component: AuthorsListComponent, outlet: 'list'},
+      {path: 'authorsList', component: AuthorsListComponent, outlet: 'list'},
       {path: ':id', component: AuthorDetailComponent, outlet: 'detail'}
     ]
     }

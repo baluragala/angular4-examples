@@ -26,7 +26,7 @@ export class ReactiveOrderFormComponent implements OnInit {
     return this.formBuilder.group({
       name: ['', [Validators.required]],
       description: ['', [Validators.required]],
-      quantity: ['', [Validators.required, Validators.min(1)]]
+      quantity: ['', [Validators.required]]
     });
   }
 

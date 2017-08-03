@@ -6,7 +6,7 @@ import {AUTHORS} from './data';
   template: `
     <div *ngFor="let a of authors">
       <p>{{a.id}}</p>
-      <h1><a [routerLink]="['/authors', {outlets: {'list': ['authors-list'], 'detail': [a.id]}}]">{{a.name}}</a></h1>
+      <h1><a [routerLink]="['/routing','authors', {outlets: {'list': ['authorsList'], 'detail': [a.id]}}]">{{a.name}}</a></h1>
     </div>
   `,
   styles: []
