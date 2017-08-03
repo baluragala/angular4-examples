@@ -13,12 +13,21 @@ import {StylingModule} from './styling/styling.module';
 import {ComponentModule} from './component/component.module';
 import {DirectiveModule} from './directive/directive.module';
 import {FormsExampleModule} from './forms/forms.module';
+import {RoutingIndexComponent} from './routing/routing-index.component';
+import {AuthorsListComponent} from './routing/authors-list.component';
+import {AuthorDetailComponent} from './routing/author-detail.component';
+import {AuthorsComponent} from './routing/authors.component';
+import {RoutingModule} from './routing/routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExamplesIndexComponent
+    ExamplesIndexComponent,
+    RoutingIndexComponent,
+    AuthorsListComponent,
+    AuthorDetailComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +40,7 @@ import {FormsExampleModule} from './forms/forms.module';
     ComponentModule,
     DirectiveModule,
     FormsExampleModule,
+    RoutingModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],
