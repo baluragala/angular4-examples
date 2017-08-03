@@ -18,9 +18,10 @@ import {AuthorsListComponent} from './routing/authors-list.component';
 import {AuthorDetailComponent} from './routing/author-detail.component';
 import {AuthorsComponent} from './routing/authors.component';
 import {RoutingModule} from './routing/routing.module';
-import { RouteParamsComponent } from './routing/route-params.component';
-import { ImperativeNavigationComponent } from './routing/imperative-navigation.component';
-import { ResolveCourseComponent } from './routing/resolve-course.component';
+import {RouteParamsComponent} from './routing/route-params.component';
+import {ImperativeNavigationComponent} from './routing/imperative-navigation.component';
+import {ResolveCourseComponent} from './routing/resolve-course.component';
+import {ComponentCommunicationModule} from "./component-communication/component-communication.module";
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { ResolveCourseComponent } from './routing/resolve-course.component';
     DirectiveModule,
     FormsExampleModule,
     RoutingModule,
+    ComponentCommunicationModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],
