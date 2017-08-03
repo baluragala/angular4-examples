@@ -1,0 +1,24 @@
+<fieldset>
+  <legend>
+    <button class="btn btn-warning" (click)="OnClick()">Forms</button>
+  </legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['simple-2way-binding']">Simple 2 way binding</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['template']">Template Driven</a></li>
+    </div>
+    <div class="col-md-4">
+      <li><a [routerLink]="['reactive']">Reactive</a></li>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['reactive-form-array']">Reactive Form Builder And Form Array</a></li>
+    </div>
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>

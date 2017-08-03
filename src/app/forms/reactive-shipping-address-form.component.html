@@ -1,0 +1,78 @@
+<h2>Shipping Address (Reactive)</h2>
+<form [formGroup]="addressForm" (ngSubmit)="save()">
+  <!--name-->
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text"
+           class="form-control"
+           formControlName="name">
+    <div>
+      <table class="table-bordered">
+        <tr>
+          <td>valid</td>
+          <td>invalid</td>
+          <td>dirty</td>
+          <td>pristine</td>
+          <td>touched</td>
+          <td>untouched</td>
+        </tr>
+        <tr>
+          <td>{{addressForm.controls.name.valid}}</td>
+          <td>{{addressForm.controls.name.invalid}}</td>
+          <td>{{addressForm.controls.name.dirty}}</td>
+          <td>{{addressForm.controls.name.pristine}}</td>
+          <td>{{addressForm.controls.name.touched}}</td>
+          <td>{{addressForm.controls.name.untouched}}</td>
+        </tr>
+      </table>
+      <p class="error" *ngIf="addressForm.controls.name.dirty && addressForm.controls.name.errors?.required">
+        Name is required
+      </p>
+      <p class="error"
+         *ngIf="addressForm.controls.name.dirty && addressForm.controls.name.touched && addressForm.controls.name.errors?.minlength">
+        Name must be minimum 5 characters
+      </p>
+      <p class="error"
+         *ngIf="addressForm.controls.name.dirty && addressForm.controls.name.touched && addressForm.controls.name.errors?.maxlength">
+        Name must be maximum of 30 characters
+      </p>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Mobile</label>
+    <input type="text"
+           class="form-control"
+           formControlName="mobile"
+    >
+  </div>
+
+  <!--adrress group-->
+  <div formGroupName="address" class="form-group">
+    <div>
+      <label>Street</label>
+      <input type="text"
+             class="form-control"
+             formControlName="street"
+      >
+    </div>
+
+    <div class="form-group">
+      <label>City</label>
+      <input type="text"
+             class="form-control"
+             formControlName="city"
+      >
+    </div>
+
+    <div class="form-group">
+      <label>Postal code</label>
+      <input type="text"
+             class="form-control"
+             formControlName="postalcode"
+      >
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-success" [disabled]="!addressForm.valid">Submit</button>
+</form>
