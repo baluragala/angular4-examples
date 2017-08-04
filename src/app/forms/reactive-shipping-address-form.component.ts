@@ -20,7 +20,7 @@ export class ShippingAddressReactiveFormComponent implements OnInit {
 
   ngOnInit() {
     this.addressForm = new FormGroup({
-      name: new FormControl('', [Validators.required,
+      name: new FormControl('Bala Krishna', [Validators.required,
         Validators.minLength(5),
         Validators.maxLength(30)
       ]),
@@ -35,7 +35,7 @@ export class ShippingAddressReactiveFormComponent implements OnInit {
       })
     });
   }
-
+  
   save() {
     console.log(this.addressForm);
   }

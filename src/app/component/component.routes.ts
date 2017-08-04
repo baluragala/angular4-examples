@@ -1,6 +1,6 @@
-import {ComponentIndexComponent} from "./component-index.component";
-import {SimpleComponent} from "./simple.component";
-import {ComposingComponent} from "./composing.component";
+import {ComponentIndexComponent} from './component-index.component';
+import {SimpleComponent} from './simple.component';
+import {ComposingComponent} from './composing.component';
 
 export const componentRoutes = [
   {
