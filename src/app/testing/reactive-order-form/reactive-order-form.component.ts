@@ -2,15 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-shipping-address-reactive-form',
-  templateUrl: './reactive-shipping-address-form.component.html',
-  styles: [`.error {
-    color: red
-  }`, `td {
-    padding: 20px;
-  }`]
+  selector: 'app-reactive-order-form',
+  templateUrl: './reactive-order-form.component.html',
+  styleUrls: ['./reactive-order-form.component.css']
 })
-export class ShippingAddressReactiveFormComponent implements OnInit {
+export class ReactiveOrderFormComponent implements OnInit {
 
   addressForm: FormGroup;
 
@@ -44,11 +40,11 @@ export class ShippingAddressReactiveFormComponent implements OnInit {
     if (strict) {
       this.addressForm.setValue({
         name: 'Sintec Media',
-        mobile: '11111111111111',
+        mobile: '1234567890',
         address: {
           street: '123 street',
           city: 'Bangalore',
-          postalCode: 560065
+          postalcode: 560065
         }
       });
     } else {
@@ -57,11 +53,10 @@ export class ShippingAddressReactiveFormComponent implements OnInit {
         address: {
           street: '123 street',
           city: 'Bangalore',
-          postalCode: 560065
+          postalcode: 560065
         }
       });
     }
   }
-
 
 }
