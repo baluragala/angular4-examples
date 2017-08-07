@@ -21,7 +21,8 @@ import {RoutingModule} from './routing/routing.module';
 import {RouteParamsComponent} from './routing/route-params.component';
 import {ImperativeNavigationComponent} from './routing/imperative-navigation.component';
 import {ResolveCourseComponent} from './routing/resolve-course.component';
-import {ComponentCommunicationModule} from "./component-communication/component-communication.module";
+import {ComponentCommunicationModule} from './component-communication/component-communication.module';
+import {RemoteCommunicationModule} from './remote-communication/remote-communication.module';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import {ComponentCommunicationModule} from "./component-communication/component-
     FormsExampleModule,
     RoutingModule,
     ComponentCommunicationModule,
+    RemoteCommunicationModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],

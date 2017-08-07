@@ -1,0 +1,15 @@
+<fieldset>
+  <legend>
+    <button class="btn btn-danger" (click)="OnClick()">Remote Communication</button>
+  </legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['display']"
+             routerLinkActive="active">Display Data(GET)</a>
+      </li>
+    </div>
+
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>
