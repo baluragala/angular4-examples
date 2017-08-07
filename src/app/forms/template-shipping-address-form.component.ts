@@ -4,7 +4,11 @@ import {NgForm} from '@angular/forms';
 @Component({
   selector: 'app-shipping-address-form',
   templateUrl: './template-shipping-address-form.component.html',
-  styles: []
+  styles: [`.error {
+    color: red
+  }`, `td {
+    padding: 20px;
+  }`]
 })
 export class ShippingAddressFormComponent implements OnInit {
   user;

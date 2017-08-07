@@ -35,7 +35,7 @@ export class ShippingAddressReactiveFormComponent implements OnInit {
       })
     });
   }
-  
+
   save() {
     console.log(this.addressForm);
   }

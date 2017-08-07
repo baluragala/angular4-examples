@@ -9,10 +9,38 @@
            [(ngModel)]="user.name"
            #name="ngModel"
            required minlength="5">
-    {{name.errors | json }}
-    <small [hidden]="name.valid || name.pristine" class="text-danger">
-      Name is required (minimum 5 characters).
-    </small>
+
+    <div>
+      <table class="table-bordered">
+        <tr>
+          <td>valid</td>
+          <td>invalid</td>
+          <td>dirty</td>
+          <td>pristine</td>
+          <td>touched</td>
+          <td>untouched</td>
+        </tr>
+        <tr>
+          <td>{{name?.valid}}</td>
+          <td>{{name?.invalid}}</td>
+          <td>{{name?.dirty}}</td>
+          <td>{{name?.pristine}}</td>
+          <td>{{name?.touched}}</td>
+          <td>{{name?.untouched}}</td>
+        </tr>
+      </table>
+      <p class="error" *ngIf="name?.dirty && name?.errors?.required">
+        Name is required
+      </p>
+      <p class="error"
+         *ngIf="name?.dirty && name?.touched && name?.errors?.minlength">
+        Name must be minimum 5 characters
+      </p>
+      <p class="error"
+         *ngIf="name?.dirty && name?.touched && name?.errors?.maxlength">
+        Name must be maximum of 30 characters
+      </p>
+    </div>
   </div>
 
   <div class="form-group">
