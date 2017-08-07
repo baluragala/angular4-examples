@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-order-form',
@@ -10,6 +10,11 @@ export class ReactiveOrderFormComponent implements OnInit {
 
   orderForm: FormGroup;
   items: any[] = [];
+  additionalServices = [
+    {name: 'Secure Packing', id: 1, selected: false},
+    {name: 'In Person Delivery', id: 2, selected: false},
+    {name: 'Express Shipping', id: 3, selected: false}
+  ];
 
   constructor(private formBuilder: FormBuilder) {
   }
@@ -18,8 +23,15 @@ export class ReactiveOrderFormComponent implements OnInit {
     this.orderForm = this.formBuilder.group({
       customerName: ['', [Validators.required, Validators.minLength(5)]],
       email: '',
+      membership: '',
+      additionalServices: this.formBuilder.array([
+        new FormControl(false),
+        new FormControl(false),
+        new FormControl(false)
+      ]),
       items: this.formBuilder.array([this.createItem()])
-    });
+    })
+    ;
   }
 
   createItem(): FormGroup {
@@ -41,8 +53,39 @@ export class ReactiveOrderFormComponent implements OnInit {
     control.removeAt(i);
   }
 
+  load() {
+    this.addItem();
+    this.orderForm.patchValue({
+      'customerName': 'John',
+      'email': 'john@abc.com',
+      'membership': 'yes',
+      'additionalServices': [false, true, true],
+      'items': [
+        {
+          'name': 'bbb',
+          'description': 'bbb',
+          'quantity': '2'
+        },
+        {
+          'name': 'ccc',
+          'description': 'ccc',
+          'quantity': '2'
+        }
+      ]
+    });
+  }
+
   save() {
-    console.log(this.orderForm.value);
+    const formValue = Object.assign({}, this.orderForm.value);
+    const additionalServices = formValue.additionalServices.map((selected, index) => {
+      return {
+        id: this.additionalServices[index].id,
+        name: this.additionalServices[index].name,
+        selected
+      };
+    });
+    formValue.additionalServices = additionalServices;
+    console.log(formValue);
   }
 
 }
