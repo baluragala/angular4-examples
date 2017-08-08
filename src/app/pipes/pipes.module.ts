@@ -13,6 +13,8 @@ import {JsonPipeComponent} from './json-pipe.component';
 import {SlicePipeComponent} from './slice-pipe.component';
 import {LowerUpperTitlePipeComponent} from './lower-upper-title-pipe.component'
 import {pipesRoutes} from "./pipes.routes";
+import { ToPowerPipe } from './to-power.pipe';
+import { CustomPipeComponent } from './custom-pipe.component';
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import {pipesRoutes} from "./pipes.routes";
     CommonModule,
     RouterModule.forChild(pipesRoutes)
   ],
-  declarations: [AsyncPromisePipeComponent, PipesIndexComponent, AsyncObservablePipeComponent, CurrencyPipeComponent, DecimalPipeComponent, DatePipeComponent, I18nPluralPipeComponent, I18nSelectPipeComponent, JsonPipeComponent, SlicePipeComponent, LowerUpperTitlePipeComponent],
+  declarations: [AsyncPromisePipeComponent, PipesIndexComponent, AsyncObservablePipeComponent, CurrencyPipeComponent, DecimalPipeComponent, DatePipeComponent, I18nPluralPipeComponent, I18nSelectPipeComponent, JsonPipeComponent, SlicePipeComponent, LowerUpperTitlePipeComponent, ToPowerPipe, CustomPipeComponent],
   exports: [PipesIndexComponent]
 
 })

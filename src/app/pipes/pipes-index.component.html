@@ -1,5 +1,7 @@
 <fieldset>
-  <legend><button class="btn btn-warning" (click)="OnClick()">Pipes</button></legend>
+  <legend>
+    <button class="btn btn-warning" (click)="OnClick()">Pipes</button>
+  </legend>
   <div class="row">
     <div class="col-md-4">
       <li><a [routerLink]="['async-promise']">Async Promise</a></li>
@@ -31,6 +33,11 @@
     </div>
     <div class="col-md-4">
       <li><a [routerLink]="['case']">Lower/Upper/Title case</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['custom']">Custom</a></li>
     </div>
   </div>
   <br/><br/>
