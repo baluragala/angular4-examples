@@ -1,14 +1,15 @@
 {
   "users": [
     {
-      "id": 1,
       "firstName": "Zeo",
       "lastName": "Mag",
+      "email": "bala@zeolearn.com",
       "address": {
         "street": "church hill station",
         "city": "newyork",
-        "state": "NY"
-      }
+        "postalcode": "123456"
+      },
+      "id": 1
     }
   ],
   "posts": [
