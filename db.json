@@ -1,4 +1,16 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Zeo",
+      "lastName": "Mag",
+      "address": {
+        "street": "church hill station",
+        "city": "newyork",
+        "state": "NY"
+      }
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -16,8 +28,7 @@
   "profile": {
     "name": "typicode"
   },
-  "orders": [
-  ],
+  "orders": [],
   "cities": [
     {
       "id": "1",
