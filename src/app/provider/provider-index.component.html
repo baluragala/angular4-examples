@@ -1,0 +1,18 @@
+<p>
+  provider-index works!
+</p>
+<fieldset>
+  <legend>
+    <button class="btn btn-danger" (click)="OnClick()">Providers ( Dependency Injection )</button>
+  </legend>
+  <div class="row">
+    <div class="col-md-4">
+      <li><a [routerLink]="['component-level']"
+             routerLinkActive="active">Component Level Provider</a>
+      </li>
+    </div>
+
+  </div>
+  <br/><br/>
+  <router-outlet></router-outlet>
+</fieldset>

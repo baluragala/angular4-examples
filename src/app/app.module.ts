@@ -23,6 +23,8 @@ import {ImperativeNavigationComponent} from './routing/imperative-navigation.com
 import {ResolveCourseComponent} from './routing/resolve-course.component';
 import {ComponentCommunicationModule} from './component-communication/component-communication.module';
 import {RemoteCommunicationModule} from './remote-communication/remote-communication.module';
+import {ProviderModule} from './provider/provider.module';
+import {SharedModule} from './shared/shared.module';
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import {RemoteCommunicationModule} from './remote-communication/remote-communica
     RoutingModule,
     ComponentCommunicationModule,
     RemoteCommunicationModule,
+    ProviderModule,
+    SharedModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],
