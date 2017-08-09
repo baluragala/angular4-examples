@@ -5,7 +5,7 @@ import {routingRoutes} from './routing.routes';
 import {Observable} from 'rxjs/Observable';
 import {CourseResolveService} from './course-resolve.service';
 import {CourseService} from './course.service';
-import {AuthorizeGaurdService} from './authorize-gaurd.service';
+import {AuthorizeGuardService} from './authorize-guard.service';
 import {getProduct} from './get-product';
 
 @NgModule({
@@ -21,7 +21,7 @@ import {getProduct} from './get-product';
     },
     CourseService,
     CourseResolveService,
-    AuthorizeGaurdService
+    AuthorizeGuardService
   ]
 })
 export class RoutingModule {

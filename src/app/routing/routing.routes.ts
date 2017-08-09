@@ -2,10 +2,10 @@ import {RoutingIndexComponent} from './routing-index.component';
 import {AuthorsComponent} from './authors.component';
 import {AuthorsListComponent} from './authors-list.component';
 import {AuthorDetailComponent} from './author-detail.component';
-import {RouteParamsComponent} from "./route-params.component";
-import {ImperativeNavigationComponent} from "./imperative-navigation.component";
-import {ResolveCourseComponent} from "./resolve-course.component";
-import {CourseResolveService} from "./course-resolve.service";
+import {RouteParamsComponent} from './route-params.component';
+import {ImperativeNavigationComponent} from './imperative-navigation.component';
+import {ResolveCourseComponent} from './resolve-course.component';
+import {CourseResolveService} from './course-resolve.service';
 
 export const routingRoutes = [
   {
