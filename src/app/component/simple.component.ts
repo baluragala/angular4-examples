@@ -11,7 +11,7 @@ import {Component, OnInit} from '@angular/core';
   styles: []
 })
 export class SimpleComponent implements OnInit {
-  message: string = "This is a simple component";
+  message = 'This is a simple component';
 
   constructor() {
   }
