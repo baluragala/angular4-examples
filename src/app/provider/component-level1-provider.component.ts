@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {LoggerService} from './logger.service';
 
 @Component({
@@ -14,7 +14,8 @@ import {LoggerService} from './logger.service';
 })
 export class ComponentLevel1ProviderComponent implements OnInit {
 
-  constructor(private loggerService: LoggerService) {
+  constructor(private loggerService: LoggerService,
+              @Inject('API_KEY') private apiKey: string) {
     console.log(`ComponentLevel1ProviderComponent->LoggerService instance count ${LoggerService.instanceCount}`)
   }
 

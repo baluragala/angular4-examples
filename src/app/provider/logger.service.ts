@@ -6,7 +6,7 @@ export class LoggerService {
   static instanceCount = 0;
 
   constructor() {
-    console.log('Service Instanced');
+    console.log('LoggerService Instanced');
     LoggerService.instanceCount++;
   }
 

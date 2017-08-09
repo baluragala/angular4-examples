@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {AccountService} from './account.service';
 
 @Component({
   selector: 'app-provider-index',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProviderIndexComponent implements OnInit {
 
-  constructor() { }
+  constructor(private accountService: AccountService) {
+  }
 
   ngOnInit() {
+  }
+
+  enablePremium() {
+    this.accountService.setPremium('zeo', 'zeo');
   }
 
 }
