@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-custom-attribute',
-  template: `    
+  template: `
     <h4>
       Custom Attribute - Example 1
     </h4>
@@ -39,6 +39,8 @@ import {Component, OnInit} from '@angular/core';
   styles: []
 })
 export class CustomAttributeComponent implements OnInit {
+
+  color;
 
   constructor() {
   }

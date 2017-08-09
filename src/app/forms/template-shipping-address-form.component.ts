@@ -30,7 +30,7 @@ export class ShippingAddressFormComponent implements OnInit {
     };
   }
 
-  save(model) {
+  save() {
     console.log(this.user);
   }
 
