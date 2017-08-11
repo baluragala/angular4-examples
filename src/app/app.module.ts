@@ -21,11 +21,11 @@ import {RoutingModule} from './m8routing/routing.module';
 import {RouteParamsComponent} from './m8routing/route-params.component';
 import {ImperativeNavigationComponent} from './m8routing/imperative-navigation.component';
 import {ResolveCourseComponent} from './m8routing/resolve-course.component';
-import {ComponentCommunicationModule} from './m9component-communication/component-communication.module';
+import {ComponentCommunicationModule} from './m9.1component-communication/component-communication.module';
 import {RemoteCommunicationModule} from './m10remote-communication/remote-communication.module';
 import {ProviderModule} from './m7provider/provider.module';
 import {SharedModule} from './mzshared/shared.module';
-import {RxjsModule} from "./m9rxjs/rxjs.module";
+import {RxjsModule} from "./m9.0rxjs/rxjs.module";
 
 
 @NgModule({
