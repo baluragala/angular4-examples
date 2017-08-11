@@ -5,26 +5,27 @@ import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
 
 import {AppComponent} from './app.component';
-import {PipesModule} from './pipes/pipes.module';
+import {PipesModule} from './m5pipes/pipes.module';
 import {ExamplesIndexComponent} from './examples-index.component';
-import {TemplateModule} from './template/template.module';
-import {ChangeDetectionModule} from './change-detection/change-detection.module';
-import {StylingModule} from './styling/styling.module';
-import {ComponentModule} from './component/component.module';
-import {DirectiveModule} from './directive/directive.module';
-import {FormsExampleModule} from './forms/forms.module';
-import {RoutingIndexComponent} from './routing/routing-index.component';
-import {AuthorsListComponent} from './routing/authors-list.component';
-import {AuthorDetailComponent} from './routing/author-detail.component';
-import {AuthorsComponent} from './routing/authors.component';
-import {RoutingModule} from './routing/routing.module';
-import {RouteParamsComponent} from './routing/route-params.component';
-import {ImperativeNavigationComponent} from './routing/imperative-navigation.component';
-import {ResolveCourseComponent} from './routing/resolve-course.component';
-import {ComponentCommunicationModule} from './component-communication/component-communication.module';
-import {RemoteCommunicationModule} from './remote-communication/remote-communication.module';
-import {ProviderModule} from './provider/provider.module';
-import {SharedModule} from './shared/shared.module';
+import {TemplateModule} from './m3template/template.module';
+import {ChangeDetectionModule} from './mzchange-detection/change-detection.module';
+import {StylingModule} from './m2styling/styling.module';
+import {ComponentModule} from './m2component/component.module';
+import {DirectiveModule} from './m4directive/directive.module';
+import {FormsExampleModule} from './m6forms/forms.module';
+import {RoutingIndexComponent} from './m8routing/routing-index.component';
+import {AuthorsListComponent} from './m8routing/authors-list.component';
+import {AuthorDetailComponent} from './m8routing/author-detail.component';
+import {AuthorsComponent} from './m8routing/authors.component';
+import {RoutingModule} from './m8routing/routing.module';
+import {RouteParamsComponent} from './m8routing/route-params.component';
+import {ImperativeNavigationComponent} from './m8routing/imperative-navigation.component';
+import {ResolveCourseComponent} from './m8routing/resolve-course.component';
+import {ComponentCommunicationModule} from './m9component-communication/component-communication.module';
+import {RemoteCommunicationModule} from './m10remote-communication/remote-communication.module';
+import {ProviderModule} from './m7provider/provider.module';
+import {SharedModule} from './mzshared/shared.module';
+import {RxjsModule} from "./m9rxjs/rxjs.module";
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import {SharedModule} from './shared/shared.module';
     RemoteCommunicationModule,
     ProviderModule,
     SharedModule,
+    RxjsModule,
     RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
   ],
   providers: [],
