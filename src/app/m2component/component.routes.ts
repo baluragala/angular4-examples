@@ -4,7 +4,7 @@ import {ComposingComponent} from './composing.component';
 
 export const componentRoutes = [
   {
-    path: 'component', component: ComponentIndexComponent, children: [
+    path: '', component: ComponentIndexComponent, children: [
     {path: 'simple', component: SimpleComponent},
     {path: 'composing', component: ComposingComponent}
   ]

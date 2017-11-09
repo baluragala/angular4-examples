@@ -47,7 +47,6 @@ import {RxjsModule} from "./m9.0rxjs/rxjs.module";
     TemplateModule,
     ChangeDetectionModule,
     StylingModule,
-    ComponentModule,
     DirectiveModule,
     FormsExampleModule,
     RoutingModule,
@@ -61,6 +60,9 @@ import {RxjsModule} from "./m9.0rxjs/rxjs.module";
       {
         path:'pipes',
         loadChildren:'app/m5pipes/pipes.module#PipesModule'
+      },{
+        path:'component',
+        loadChildren:'app/m2component/component.module#ComponentModule'
       }
     ])
   ],
