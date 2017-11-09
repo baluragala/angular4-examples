@@ -13,7 +13,7 @@ import {CustomPipeComponent} from './custom-pipe.component';
 
 export const pipesRoutes = [
   {
-    path: 'pipes', component: PipesIndexComponent, children: [
+    path: '', component: PipesIndexComponent, children: [
     {path: 'async-promise', component: AsyncPromisePipeComponent},
     {path: 'async-observable', component: AsyncObservablePipeComponent},
     {path: 'currency', component: CurrencyPipeComponent},

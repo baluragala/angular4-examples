@@ -44,7 +44,6 @@ import {RxjsModule} from "./m9.0rxjs/rxjs.module";
     BrowserModule,
     FormsModule,
     HttpModule,
-    PipesModule,
     TemplateModule,
     ChangeDetectionModule,
     StylingModule,
@@ -57,7 +56,13 @@ import {RxjsModule} from "./m9.0rxjs/rxjs.module";
     ProviderModule,
     SharedModule,
     RxjsModule,
-    RouterModule.forRoot([{path: '', component: ExamplesIndexComponent}])
+    RouterModule.forRoot([
+      {path: '', component: ExamplesIndexComponent},
+      {
+        path:'pipes',
+        loadChildren:'app/m5pipes/pipes.module#PipesModule'
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
