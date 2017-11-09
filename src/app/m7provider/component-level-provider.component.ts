@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {LoggerService} from './logger.service';
-import {CounterService} from '../shared/counter.service';
+import {CounterService} from '../mzshared/counter.service';
 
 @Component({
   selector: 'app-component-level-provider',
